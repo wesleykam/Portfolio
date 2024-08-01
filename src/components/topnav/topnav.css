@@ -1,0 +1,59 @@
+.topnav-section {
+    position: fixed;
+    background-color: rgb(103, 224, 135);
+    padding: 0;
+
+    z-index: 1;
+
+    overflow: hidden;
+}
+
+.topnav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+    padding: 1rem 0;
+}
+
+.topnav-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu-collapsed {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .topnav-links {
+        display: none;
+    }
+    .menu-collapsed {
+        display: flex;
+
+        cursor: pointer;
+    }
+}
+
+.topnav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+
+    overflow: hidden;
+}
+
+.animated-underline {
+    box-sizing: border-box;
+    border: 2px solid white;
+    transition: transform 0.3s ease;
+    transform: translateX(-101%);
+}
+
+.topnav-links a:hover .animated-underline {
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+

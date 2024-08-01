@@ -1,0 +1,44 @@
+.education-section:after {
+  content: '';
+  width: 50%;
+  height: 1px;
+  background-color: rgb(222, 222, 222);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -1px;
+  filter: blur(2px);
+}
+
+
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.school {
+    width: 100%;
+
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.name-timeframe {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    align-items: center;
+}
+
+.name-timeframe h5 {
+    max-width: 70%;
+}
+
+.degree {
+    color: rgb(175, 175, 175);
+}

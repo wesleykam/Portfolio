@@ -1,0 +1,72 @@
+.intro-section {
+    min-height: 60vh;
+    width: 100%;
+
+    background-color: rgb(103, 224, 135);
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+
+    gap: 5%;
+    padding: 5%;
+}
+
+.intro-text {
+    color: rgb(255, 255, 255);
+    flex: 1;
+    padding: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .intro-text {
+        text-align: center;
+    }
+}
+
+.intro-image {
+    background-image: url('../../assets/profile_picture.jpeg');
+    background-size: cover;
+    background-position: center;
+
+    border-radius: 50%;
+
+    width: 375px;
+    height: 375px;
+
+    box-shadow: 0 0 5px 5px  rgb(103, 224, 135) inset;
+}
+
+@media (max-width: 768px) {
+    .intro-image {
+        width: 275px;
+        height: 275px;
+    }
+}
+
+
+.background {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+
+    background-color: white;
+    border-radius: 50%;
+    
+    filter: blur(140px);
+
+    z-index: 2;
+}
+
+.circle1 {
+    right: 85%;
+    top: 10vh;
+}
+
+.circle2 {
+    top: 60vh;
+    left: 75%;
+}
